@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "M101",
+    "name": "HTML",
+    "description": "Learn how to create user interfaces with HTML",
+    "course": "RS101"
+  },
+  {
+    "_id": "M102",
+    "name": "CSS",
+    "description": "Styling User Interfaces With Cascading Style Sheets",
+    "course": "RS101"
+  },
+  {
+    "_id": "M103",
+    "name": "JAVASCRIPT",
+    "description": "ES6 New Features",
+    "course": "RS101"
+  },
+  {
+    "_id": "M201",
+    "name": "JAVASCRIPT",
+    "description": "Creating Single Page Applications With React.Js",
+    "course": "RS102"
+  },
+  {
+    "_id": "M202",
+    "name": "REACT",
+    "description": "Navigating with React Router DOM",
+    "course": "RS102"
+  },
+  {
+    "_id": "M203",
+    "name": "State",
+    "description": "Maintain state in a React application",
+    "course": "RS102"
+  },
+  {
+    "_id": "M301",
+    "name": "Node",
+    "description": "Creating an HTTP server with Node.js",
+    "course": "RS103"
+  },
+  {
+    "_id": "M302",
+    "name": "Session",
+    "description": "Maintaining Session in Node.js Applications",
+    "course": "RS103"
+  },
+  {
+    "_id": "M303",
+    "name": "MongoDB",
+    "description": "Storing Data In A MongoDB Database",
+    "course": "RS103"
+  }
+]
