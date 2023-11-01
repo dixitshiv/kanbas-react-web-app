@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanbas</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/831bffb295.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="profileedit.css" />
+  </head>
+
+  <body>
+    <div class="d-flex flex-row" id="wrapper">
+      <div id="sidebar-wrapper">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center flex-grow-1 text-white bg-black m-0"
+          id="kanbas-navbar"
+        >
+          <a
+            href="#"
+            class="d-flex align-items-center mb-md-0 text-white text-decoration-none"
+          >
+            <img width="85" height="85" src="../Images/NEU.png" alt="NEU" />
+          </a>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a
+                href="../Profile/profilenavigation.html"
+                class="nav-link active"
+              >
+                <div class="d-flex flex-column align-items-center">
+                  <span id="account-icon">
+                    <i class="fa-regular fa-circle-user fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">Account</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../Dashboard/dashboardindex.html" class="nav-link">
+                <div class="d-flex flex-column align-items-center">
+                  <span>
+                    <i class="fa-solid fa-gauge-high fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">Dashboard</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../Courses/coursesindex.html" class="nav-link">
+                <div class="d-flex flex-column align-items-center">
+                  <span>
+                    <i class="fa-solid fa-book fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">Courses</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-column align-items-center">
+                  <span>
+                    <i class="fa-regular fa-calendar-days fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">Calendar</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-column align-items-center">
+                  <span>
+                    <i class="fa-solid fa-inbox fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">Inbox</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-column align-items-center">
+                  <span>
+                    <i class="fa-regular fa-clock fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">History</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-column align-items-center">
+                  <span>
+                    <i class="fa-solid fa-desktop fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">Studio</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-column align-items-center">
+                  <span>
+                    <i class="fa-solid fa-right-from-bracket fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">Commons</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div class="d-flex flex-column align-items-center">
+                  <span>
+                    <i class="fa-regular fa-circle-question fa-2x"></i>
+                  </span>
+                  <div class="kanbas-navbar-item-text">Help</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-content-wrapper">
+        <div class="container-fluid">
+            <span id="account-page-header" class="d-flex flex-row align-items-center">
+                <h2>
+                    <i class="fa-solid fa-bars fa-1x me-4" id="account-page-header-icon"></i>
+                    Jose Annuziato's Profile
+                </h2>
+            </span>
+            <hr>
+            <div class="d-flex flex-row">
+                <div>
+                    <div class="d-flex flex-column secondary-sidebar" id="account-sidebar">
+                        <ul>
+                            <li><a href="#">Notifications</a></li>
+                            <li class="selected"><a href="../Profile/profileindex.html" ">Profile</a></li>
+                            <li><a href=" #">Files</a></li>
+                            <li><a href="../Settings/settingsindex.html">Settings</a></li>
+                            <li><a href="#">ePortfolios</a></li>
+                            <li><a href="#">Shared Content</a></li>
+                            <li><a href="#">The Hub</a></li>
+                            <li><a href="#">Qwickly Course Tools</a></li>
+                            <li><a href="#">Global Announcements</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex flex-column ms-4" id="profile-content">
+                  <form action="../Profile/profileindex.html" id="profile-form">
+                      <div id="header-container">
+                          <span class="fa-stack fa-3x mb-3 me-auto" id="profile-avatar">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-user fa-stack-1x" aria-hidden="true"></i>
+                          </span>
+                          <div class="float-end">
+                              <a href="../Profile/profileindex.html" class="btn btn-primary override-btn">
+                                  <i class="fa-solid fa-pencil"></i>
+                                  Cancel Editing
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-9 mb-3" id="profile-name-container">
+                          <label for="profile-name" class="form-label">
+                              <span class="profile-label">Name:*</span>
+                          </label>
+                          <input type="text" class="form-control" id="profile-name" value="Jose Annuziato">
+                      </div>
+                      <div class="col-6 mb-3" id="profile-pronoun-container">
+                          <label for="profile-pronouns" class="form-label">
+                              <span class="profile-label">Pronouns:</span>
+                          </label>
+                          <select name="pronoun" id="profile-pronouns" class="form-select">
+                              <option value="NONE" selected>None</option>
+                              <option value="HE-HIM-HIS">He/Him/His</option>
+                              <option value="SHE-HER-HERS">She/Her/Hers</option>
+                              <option value="THEY-THEM-THEIRS">They/Them/Theirs</option>
+                          </select>
+                      </div>
+                      <div class="col-9 mb-3 mb-5" id="profile-title-container">
+                          <label for="profile-title" class="form-label">
+                              <span class="profile-label">Title:</span>
+                          </label>
+                          <input type="text" class="form-control" id="profile-title">
+                      </div>
+                      <div class="mb-4 profile-section" id="profile-contact-container">
+                          <h3>Contact</h2>
+                              No registered services, you can add some on the <a href="#"
+                                  id="settings-link">settings</a> page.
+                      </div>
+                      <div class="col-9 mb-4" id="profile-biography-container">
+                          <label for="profile-biography" class="form-label">
+                              <h3>Biography</h3>
+                          </label>
+                          <textarea name="biography" id="profile-biography" cols="30" rows="10"
+                              class="form-control">Faculty, Software Engineer, AI, Space, and renewable enthusiast.
+                                      </textarea>
+                      </div>
+                      <div class="mb-4 profile-section" id="profile-links-container">
+                          <h3>Links</h3>
+                          <div class="row mb-1 align-items-center">
+                              <div class="d-flex col-5 justify-content-center">
+                                  <span class="profile-label">Title</span>
+                              </div>
+                              <div class="col-1">
+
+                              </div>
+                              <div class="d-flex col-5 justify-content-center">
+                                  <span class="profile-label">URL</span>
+                              </div>
+                              <div class="col-1">
+
+                              </div>
+                          </div>
+                          <div class="row mb-1 align-items-center">
+                              <div class="col-5">
+                                  <input type="text" class="form-control" value="YouTube">
+                              </div>
+                              <div class="col-1">
+                                  <i class="fa-solid fa-arrow-right"></i>
+                              </div>
+                              <div class="col-5">
+                                  <input type="text" class="form-control"
+                                      value="https://www.youtube.com">
+                              </div>
+                              <div class="col-1">
+                                  <i class="fa-solid fa-xmark"></i>
+                              </div>
+                          </div>
+                          <div class="row mb-4">
+                              <div class="col-5">
+                                  <a href="#" class="btn btn-primary override-btn" id="button-add-link">Add
+                                      another link</a>
+                              </div>
+                          </div>
+                          <hr>
+                      </div>
+                      <div class="d-flex flex-row justify-content-end">
+                          <a href="../Profile/profileindex.html" class="btn btn-primary override-btn me-3">Cancel</a>
+                          <button class="btn btn-primary btn-red">Submit</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

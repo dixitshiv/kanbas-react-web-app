@@ -1,0 +1,11 @@
+[
+  { "_id": "A101", "title": "A1 - ENV + HTML", "course": "RS101" },
+  { "_id": "A102", "title": "A2 - CSS + Bootstrap", "course": "RS101" },
+  { "_id": "A103", "title": "A3 - DOM + JS", "course": "RS101" },
+  { "_id": "A201", "title": "A1 - JS + React", "course": "RS102" },
+  { "_id": "A202", "title": "A2 - State", "course": "RS102" },
+  { "_id": "A203", "title": "A3 - Redux", "course": "RS102" },
+  { "_id": "A301", "title": "A1 - Node", "course": "RS103" },
+  { "_id": "A302", "title": "A2 - Session", "course": "RS103" },
+  { "_id": "A303", "title": "A3 - Mongo", "course": "RS103" }
+]
