@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import { useSelector, useDispatch } from "react-redux";
@@ -8,7 +8,6 @@ import {
   updateModule,
   setModule,
 } from "./modulesReducer";
-
 
 function ModuleList() {
   const { courseId } = useParams();
@@ -46,44 +45,57 @@ function ModuleList() {
 
   return (
     <div id="wd-modules">
-        <ul className="list-group">
-          <li className="list-group-item">
-            <input className="form-control" value={module.name}
-              onChange={(e) =>
-                dispatch(setModule({ ...module, name: e.target.value }))}
-            />
-            <textarea className="form-control" value={module.description}
-              onChange={(e) =>
-                dispatch(setModule({ ...module, description: e.target.value }))}
-            />
-            <button className="btn btn-sm btn-secondary" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
-              Add
-            </button>
-            <button className="btn btn-sm btn-secondary" onClick={() => dispatch(updateModule(module))}>
-              Update
-            </button>
+      <ul className="list-group">
+        <li className="list-group-item">
+          <input
+            className="form-control"
+            value={module.name}
+            onChange={(e) =>
+              dispatch(setModule({ ...module, name: e.target.value }))
+            }
+          />
+          <textarea
+            className="form-control"
+            value={module.description}
+            onChange={(e) =>
+              dispatch(setModule({ ...module, description: e.target.value }))
+            }
+          />
+          <button
+            className="btn btn-sm btn-success"
+            onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+          >
+            Add
+          </button>
+          <button
+            className="btn btn-sm btn-primary"
+            onClick={() => dispatch(updateModule(module))}
+          >
+            Update
+          </button>
+        </li>
 
-          </li>
-
-          {
-          modules
+        {modules
           //  .filter((module) => module.course === courseId)
           .map((module, index) => (
             <li key={index} className="list-group-item">
-              <h5 >{module.name} </h5>
-              <button className="btn btn-sm btn-secondary"
-                onClick={() => dispatch(setModule(module))}>
+              <h5>{module.name} </h5>
+              <button
+                className="btn btn-sm btn-warning"
+                onClick={() => dispatch(setModule(module))}
+              >
                 Edit
               </button>
-              <button className="btn btn-sm btn-danger"
-                onClick={() => dispatch(deleteModule(module._id))}>
+              <button
+                className="btn btn-sm btn-danger"
+                onClick={() => dispatch(deleteModule(module._id))}
+              >
                 Delete
               </button>
               <p>{module.description}</p>
             </li>
-          ))
-          }
-        </ul>
+          ))}
+      </ul>
     </div>
   );
 }
