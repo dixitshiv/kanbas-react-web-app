@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import {
   BsFillCheckCircleFill,
-  BsPencil,
-  BsPlusCircleFill,
   BsTrash3Fill,
+  BsPlusCircleFill,
+  BsPencil,
 } from "react-icons/bs";
 import * as client from "./client";
+import { Link } from "react-router-dom";
+
 function UserTable() {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({
@@ -21,6 +23,16 @@ function UserTable() {
       console.log(err);
     }
   };
+
+  const fetchUsers = async () => {
+    try {
+      const users = await client.findAllUsers();
+      setUsers(users);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const selectUser = async (user) => {
     try {
       const u = await client.findUserById(user._id);
@@ -37,6 +49,7 @@ function UserTable() {
       console.log(err);
     }
   };
+
   const deleteUser = async (user) => {
     try {
       await client.deleteUser(user);
@@ -46,10 +59,6 @@ function UserTable() {
     }
   };
 
-  const fetchUsers = async () => {
-    const users = await client.findAllUsers();
-    setUsers(users);
-  };
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -59,6 +68,7 @@ function UserTable() {
       <table className="table">
         <thead>
           <tr>
+            <th>password</th>
             <th>Username</th>
             <th>First Name</th>
             <th>Last Name</th>
@@ -69,6 +79,8 @@ function UserTable() {
                 value={user.password}
                 onChange={(e) => setUser({ ...user, password: e.target.value })}
               />
+            </td>
+            <td>
               <input
                 value={user.username}
                 onChange={(e) => setUser({ ...user, username: e.target.value })}
@@ -100,21 +112,11 @@ function UserTable() {
               </select>
             </td>
             <td className="text-nowrap">
-              <BsFillCheckCircleFill
-                onClick={updateUser}
-                className="me-2 text-success fs-1 text"
-              />
-              <BsPlusCircleFill
-                onClick={createUser}
-                className="text-success fs-1 text"
-              />
-            </td>
-            <td className="text-nowrap">
-              <button className="btn btn-danger me-2">
-                <BsTrash3Fill onClick={() => deleteUser(user)} />
+              <button className="btn me-2 text-success fs-1 text">
+                <BsFillCheckCircleFill onClick={updateUser} />
               </button>
-              <button className="btn btn-warning me-2">
-                <BsPencil onClick={() => selectUser(user)} />
+              <button className="btn me-2 text-success fs-1 text">
+                <BsPlusCircleFill onClick={createUser} />
               </button>
             </td>
           </tr>
@@ -122,16 +124,16 @@ function UserTable() {
         <tbody>
           {users.map((user) => (
             <tr key={user._id}>
-              <td>
-                <link to={`/users/account/${user._id}`}>{user.username}</link>
-              </td>
+              <Link to={`/Kanbas/account/${user._id}`}>{user.username}</Link>
               <td>{user.username}</td>
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
-              <td>
-                {" "}
-                <button onClick={() => deleteUser(user)}>
-                  <BsTrash3Fill />
+              <td className="text-nowrap">
+                <button className="btn btn-danger me-2">
+                  <BsTrash3Fill onClick={() => deleteUser(user)} />
+                </button>
+                <button className="btn btn-warning me-2">
+                  <BsPencil onClick={() => selectUser(user)} />
                 </button>
               </td>
             </tr>

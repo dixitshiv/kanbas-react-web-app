@@ -9,24 +9,29 @@ function Signin() {
   const navigate = useNavigate();
   const signin = async () => {
     await client.signin(credentials);
-    navigate("/project/account");
+    navigate("/Kanbas/account");
   };
   return (
     <div>
       <h1>Signin</h1>
       <input
+        className="form-control"
         value={credentials.username}
         onChange={(e) =>
           setCredentials({ ...credentials, username: e.target.value })
         }
       />
       <input
+        className="form-control"
         value={credentials.password}
         onChange={(e) =>
           setCredentials({ ...credentials, password: e.target.value })
         }
       />
-      <button onClick={signin}> Signin </button>
+      <button onClick={signin} className="btn btn-secondary">
+        {" "}
+        Signin{" "}
+      </button>
     </div>
   );
 }

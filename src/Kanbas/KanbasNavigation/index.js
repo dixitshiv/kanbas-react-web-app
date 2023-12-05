@@ -6,23 +6,17 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function KanbasNavigation({ active }) {
   const links = [
-    {
-      name: "Account",
-      url: "/Account",
-      icon: "fa-regular fa-circle-user",
-    },
-    {
-      name: "Dashboard",
-      url: "/Dashboard",
-      icon: "fa-solid fa-gauge-high",
-    },
-    { name: "Courses", url: "/Courses", icon: "fa-solid fa-book" },
-    { name: "Calender", url: "#", icon: "fa-regular fa-calendar-days" },
-    { name: "Inbox", url: "#", icon: "fa-solid fa-inbox" },
-    { name: "History", url: "#", icon: "fa-regular fa-clock" },
-    { name: "Studio", url: "#", icon: "fa-solid fa-desktop" },
-    { name: "Commons", url: "#", icon: "fa-solid fa-right-from-bracket" },
-    { name: "Help", url: "#", icon: "fa-regular fa-circle-question" },
+    { name: "Signin", url: "/Signin", icon: "fa fa-user" },
+    { name: "Signup", url: "/Signup", icon: "fa fa-user" },
+    { name: "Account", url: "/Account", icon: "fa fa-user" },
+    { name: "Dashboard", url: "/Dashboard", icon: "fas fa-tachometer" },
+    { name: "Courses", url: "/Courses", icon: "fa fa-book" },
+    { name: "Calender", url: "#", icon: "fa fa-calendar" },
+    { name: "Inbox", url: "#", icon: "fa fa-inbox" },
+    { name: "History", url: "#", icon: "fa fa-clock" },
+    { name: "Studio", url: "#", icon: "fa fa-laptop" },
+    { name: "Commons", url: "#", icon: "fa fa-creative-commons" },
+    { name: "Help", url: "#", icon: "fa fa-question-circle" },
   ];
   const { pathname } = useLocation();
 
