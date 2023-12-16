@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "121",
+    "username": "ronaldo7",
+    "password": "cr7fan",
+    "firstName": "Cristiano",
+    "lastName": "Ronaldo",
+    "email": "cristiano@ronaldo.com",
+    "dob": "1985-02-05",
+    "role": "Student"
+  },
+  {
+    "_id": "122",
+    "username": "messi10",
+    "password": "lionel123",
+    "firstName": "Lionel",
+    "lastName": "Messi",
+    "email": "lionel@messi.com",
+    "dob": "1987-06-24",
+    "role": "Student"
+  },
+  {
+    "_id": "123",
+    "username": "neymarjr10",
+    "password": "neymar123",
+    "firstName": "Neymar",
+    "lastName": "Junior",
+    "email": "neymar@jr.com",
+    "dob": "1992-02-05",
+    "role": "Student"
+  },
+  {
+    "_id": "124",
+    "username": "salah11",
+    "password": "mohamed123",
+    "firstName": "Mohamed",
+    "lastName": "Salah",
+    "email": "mohamed@salah.com",
+    "dob": "1992-06-15",
+    "role": "Student"
+  },
+  {
+    "_id": "125",
+    "username": "mbappe7",
+    "password": "kylian123",
+    "firstName": "Kylian",
+    "lastName": "Mbappé",
+    "email": "kylian@mbappe.com",
+    "dob": "1998-12-20",
+    "role": "Student"
+  },
+  {
+    "_id": "126",
+    "username": "kane9",
+    "password": "harry123",
+    "firstName": "Harry",
+    "lastName": "Kane",
+    "email": "harry@kane.com",
+    "dob": "1993-07-28",
+    "role": "Student"
+  },
+  {
+    "_id": "127",
+    "username": "aguero10",
+    "password": "sergio123",
+    "firstName": "Sergio",
+    "lastName": "Aguero",
+    "email": "sergio@aguero.com",
+    "dob": "1988-06-02",
+    "role": "FACULTY"
+  },
+  {
+    "_id": "128",
+    "username": "modric10",
+    "password": "luka123",
+    "firstName": "Luka",
+    "lastName": "Modric",
+    "email": "luka@modric.com",
+    "dob": "1985-09-09",
+    "role": "FACULTY"
+  },
+  {
+    "_id": "129",
+    "username": "hazard7",
+    "password": "eden123",
+    "firstName": "Eden",
+    "lastName": "Hazard",
+    "email": "eden@hazard.com",
+    "dob": "1991-01-07",
+    "role": "FACULTY"
+  }
+]
